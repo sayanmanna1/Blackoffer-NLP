@@ -1,0 +1,15 @@
+There are 2 .py file. The text_extractio.py is for web scrapping and the text_analysis.py is for text analysis and for 
+calculating the variables. The data folder contains the extracted texts and titles from the given websites. There are 114 text files. The excel file Output Data Structure.xlsx contains the calculated varriable values.
+
+text_extraction.py:
+	
+	I have read the urls from Input.csv which contains all the website links along with their URL_ID
+	In this code, I have used BeautifulSoup module for web scrapping.
+	I have used the requests module to get the html from the given urls
+	I have  extracted the text from the website and title and not the image captions.
+	And have extracted the texts which are in paragraph, list or in heading tags.
+	
+text_analysis.py:
+	
+	Here I have used the nltk module for word tokenization, sentence tokenization, stop words, syllable tokenization, removing punctuations by RegexpTokenizer. Here I have also used regex(re) module for regular expressions. First I have made a list of stop words with proper preprocessing from the given stop words documents. Then after tokenizing and preprocessing our text, I have calculated all the varriables and stored them in the given format of Output Data Structure.xlsx.
+	And we have to wait for some moments to complete the running of this file. 
